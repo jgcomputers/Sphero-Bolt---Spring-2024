@@ -21,7 +21,7 @@ async function startProgram() {
 	await delay(1);
 	for (var Square = 0; Square < 4; Square++) {
 		setMainLed(getRandomColor());
-		await Sound.Game.Coin.play(true);
+		await Sound.Menu.Loading.play(true);
 		await roll((getHeading() + 90), 40, 2);
 		await delay(1);
 	}
