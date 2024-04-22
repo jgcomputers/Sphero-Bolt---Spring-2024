@@ -15,6 +15,7 @@ async function startProgram() {
 }
 */
 
+/*
 async function startProgram() {
 	setMainLed({ r: 255, g: 255, b: 255 });
 	await speak("Ima eat you", true);
@@ -25,4 +26,9 @@ async function startProgram() {
 		await roll((getHeading() + 90), 40, 2);
 		await delay(1);
 	}
+}
+*/
+
+async function startProgram() {
+
 }
