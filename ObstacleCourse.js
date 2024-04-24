@@ -14,3 +14,10 @@ async function startProgram() {
 
 	await roll((getHeading() + 0), 50,1.4);
 	await delay(1);
+
+	await roll((getHeading() + 270), 10,2);
+	await delay(1);
+
+	await roll((getHeading() + 0), 50,1.2);
+	await delay(1);
+}
