@@ -28,5 +28,12 @@ async function startProgram() {
 	await roll((getHeading() + 0), 60,1.4);
 	await delay(1);
 
+	//Jordan Checkpoint 5 - PC 5 - Added Sound
+	await roll((getHeading() + 270), 10, 2);
+	await delay(1);
+	await roll((getHeading() + 0), 60,2.3);
+	await delay(1);
+	await Sound.Menu.Loading.play(true);
 }
+
 
