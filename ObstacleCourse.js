@@ -10,6 +10,7 @@ async function startProgram() {
 	await delay(1);
 
 	await roll((getHeading() + 90), 10, 2);
+	setMainLed({ r: 100, g: 0, b: 30});
 	await delay(1);
 
 	await roll((getHeading() + 0), 50,1.4);
@@ -18,6 +19,7 @@ async function startProgram() {
 	await roll((getHeading() + 270), 10,2);
 	await delay(1);
 
+	await speak("Half Way there", true);
 	await roll((getHeading() + 0), 50,1.2);
 	await delay(1);
 
@@ -34,6 +36,7 @@ async function startProgram() {
 	await roll((getHeading() + 0), 60,2.3);
 	await delay(1);
 	await Sound.Menu.Loading.play(true);
+	await speak("You did it yaaaaaa!!!", true);
 }
 
 
