@@ -18,7 +18,7 @@ async function startProgram() {
 	setMainLed({ r: 0, g: 0, b: 255 });
 
 	//Programmer: Aren Gay    - Sound One Checkpoint Commit - Date: 5.1.24
-	await roll((getHeading() + 90), 70, 1.7);
+	await roll((getHeading() + 90), 70, 1.6);
 	await Sound.Animal.Alligator.play(true);
 
 
@@ -39,7 +39,9 @@ async function startProgram() {
 	//Programmer: Jordan Gibbs - Green LED Checkpoint Commit - Date:vggg
 	await roll((getHeading() + 90), 60, .6);
 	await roll((getHeading() + 33), 60, 1);
-	setMainLed({ r: 255, g: 0, b: 0 });
+	await delay(1);
+	await roll((getHeading() - 65), 60, .8);
+	setMainLed({ r: 0, g: 255, b: 0 });
 
 	//Programmer:          - Purple LED & Sound Three Checkpoint Commit - Date:gggg
 
