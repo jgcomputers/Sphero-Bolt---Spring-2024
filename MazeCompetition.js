@@ -51,7 +51,8 @@ async function startProgram() {
 	setMainLed({ r: 255, g: 0, b: 255 });
 
 	//Programmer: Jordan Gibbs          - Finish Text & Audio Commit - Date:qwwsdeseee
-	
+	await roll((getHeading() + 55), 60, 1.5);
+	await scrollMatrixText ("program ended", {r: 66, g: 56, b: 255}, 30, true)
 
 
 
