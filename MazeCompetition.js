@@ -53,7 +53,7 @@ async function startProgram() {
 	//Programmer: Jordan Gibbs          - Finish Text & Audio Commit - Date:qwwsdeseee
 	await roll((getHeading() + 55), 60, 1.5);
 	await scrollMatrixText ("program ended", {r: 66, g: 56, b: 255}, 30, true)
-
+	await speak("program started", true);
 
 
 }
