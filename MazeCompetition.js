@@ -50,10 +50,10 @@ async function startProgram() {
 	await Sound.Animal.Bear.play(true);
 	setMainLed({ r: 255, g: 0, b: 255 });
 
-	//Programmer: Jordan Gibbs          - Finish Text & Audio Commit - Date:qwwsdeseee
+	//Programmer: Jordan Gibbs          - Finish Text & Audio Commit - Date:5.7.2024
 	await roll((getHeading() + 55), 60, 1.5);
 	await scrollMatrixText ("program ended", {r: 66, g: 56, b: 255}, 30, true)
-	await speak("program started", true);
+	await speak("program ended", true);
 
 
 }
